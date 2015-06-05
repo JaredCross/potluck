@@ -1,0 +1,7 @@
+#list-container ul li {
+  display: inline;
+}
+
+table, td {
+   border: 1px solid black;
+}

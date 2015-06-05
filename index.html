@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Submit Form Using AJAX and jQuery</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <div id="mainform">
+      <h2>Potluck Sign up!</h2> <!-- Required div Starts Here -->
+    <div>
+      <h3>fill in your info here!</h3>
+    </div>
+      <form id = "potluck-form">
+        <label>Name? </label>
+        <input id="name" type="text">
+        <label>Main Dish? </label>
+        <input id="main-dish" type="text">
+        <label>Side Dish? </label>
+        <input id="side-dish" type="text">
+        <label>Dessert? </label>
+        <input id="dessert-dish" type="text">
+        <label>Other? </label>
+        <input id="other" type="text">
+        <input id="submit" type="button" value="Submit">
+      </form>
+    </div>
+    <div id = "table-container">
+      <table class = "potluck-table-data">
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Main Dish
+          </th>
+          <th>
+            Side Dish
+          </th>
+          <th>
+            Dessert
+          </th>
+          <th>
+            Other
+          </th>
+        </tr>
+      </table>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src = "request.js"></script>
+  </body>
+</html>
