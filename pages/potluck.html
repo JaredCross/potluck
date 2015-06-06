@@ -5,14 +5,31 @@
     <title>Submit Form Using AJAX and jQuery</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="jumbotron">
       <div class="container">
         <h1>Potluck Sign Up!</h1>
-          <h2>Fill in your info below!</h2>
+          <h2>June 15th Potluck, sign up below!</h2>
       </div>
     </div>
+    <!-- begin add to calendar button from addtocalendar.com -->
+    <div class="add-to-calendar-container">
+    <span class="addtocalendar atc-style-blue">
+       <var class="atc_event">
+           <var class="atc_date_start">2015-06-15 9:00:00</var>
+           <var class="atc_date_end">2015-06-15 13:00:00</var>
+           <var class="atc_timezone">America/Denver</var>
+           <var class="atc_title">June Potluck!</var>
+           <var class="atc_description">Eat good food</var>
+           <var class="atc_location">Galvanize Basement</var>
+           <var class="atc_organizer">Jared</var>
+           <var class="atc_organizer_email">cross.jared@gmail.com</var>
+       </var>
+   </span>
+ </div>
+    <!-- end add to calendar button -->
     <div id = "table-container">
       <table class = "potluck-table-data">
         <tr>
@@ -34,8 +51,8 @@
         </tr>
       </table>
     </div>
-    <p></p>
     <div id="mainform">
+      <p>Please enter your name and whatever you would like to bring below.</p>
       <form id = "potluck-form">
       <div class="left">
         <label for="name">Name?</label>
@@ -77,5 +94,6 @@
     <script src="../js/javascript.js"></script>
     <script src = "../js/request.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src ="../js/addtocalendar.js"></script>
   </body>
 </html>
