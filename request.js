@@ -52,7 +52,7 @@ function requestedData(){
 }
 
 $("#submit").click(function() {
-  // $('.potluck-table-data').empty();
-
-  location.reload(true);
+  setTimeout(function(){
+    location.reload(true);
+  }, 500);
 });
