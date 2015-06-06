@@ -24,6 +24,14 @@ label {
 
 }
 
+tr:nth-child(even) {
+  background: #EFF1EA;
+}
+
+tr:nth-child(odd) {
+  background: #CDF7F6;
+}
+
 
 
 
