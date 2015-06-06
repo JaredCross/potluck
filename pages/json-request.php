@@ -8,7 +8,7 @@
   $tableName = "potluck_table";
 
 
-  include 'DB.php';
+  // include 'DB.php';
   $con = mysql_connect($host,$user,$pass);
   $dbs = mysql_select_db($databaseName, $con);
 

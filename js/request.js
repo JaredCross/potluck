@@ -28,7 +28,7 @@ function requestedData(){
   $(function ()
     {
       $.ajax({
-        url: 'json-request.php',
+        url: '../pages/json-request.php',
         data: "",
 
         dataType: 'json',

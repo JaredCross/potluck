@@ -1,7 +1,7 @@
 $("#submit").click(function() {
     if($("#name").val()!="") {
         $.ajax({
-            url: "process.php",
+            url: "../pages/process.php",
             type: "POST",
             async: true,
             data: { name:$("#name").val(), main:$("#main-dish").val(), side:$("#side-dish").val(),
