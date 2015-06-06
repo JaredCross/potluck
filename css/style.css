@@ -9,3 +9,20 @@ table {
 table, td, th {
    border: 1px solid black;
 }
+
+#mainform {
+  margin-left: 50px;
+}
+
+label {
+   width: 100px;
+   display: inline-block;
+
+}
+
+
+
+
+#table-container {
+  margin-left: 50px;
+}

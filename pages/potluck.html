@@ -3,27 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Submit Form Using AJAX and jQuery</title>
-    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   </head>
   <body>
-    <div id="mainform">
-      <h2>Potluck Sign up!</h2>
-    <div>
-      <h3>fill in your info here!</h3>
-    </div>
-      <form id = "potluck-form">
-        <label>Name? </label>
-        <input id="name" type="text">
-        <label>Main Dish? </label>
-        <input id="main-dish" type="text">
-        <label>Side Dish? </label>
-        <input id="side-dish" type="text">
-        <label>Dessert? </label>
-        <input id="dessert-dish" type="text">
-        <label>Other? </label>
-        <input id="other" type="text">
-        <input id="submit" type="button" value="Submit">
-      </form>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Potluck Sign Up!</h1>
+          <h2>Fill in your info below!</h2>
+      </div>
     </div>
     <div id = "table-container">
       <table class = "potluck-table-data">
@@ -46,8 +34,48 @@
         </tr>
       </table>
     </div>
+    <p></p>
+    <div id="mainform">
+      <form id = "potluck-form">
+      <div class="left">
+        <label for="name">Name?</label>
+      </div>
+      <div class="right">
+        <input id="name" type="text">
+      </div>
+      <div class="left">
+        <label for="main-dish">Main Dish? </label>
+      </div>
+      <div class="right">
+        <input id="main-dish" type="text">
+      </div>
+      <div class="left">
+        <label for="side-dish">Side Dish? </label>
+      </div>
+      <div class="right">
+        <input id="side-dish" type="text">
+      </div>
+      <div class="left">
+        <label for="dessert-dish">Dessert?   </label>
+      </div>
+      <div class="right">
+        <input id="dessert-dish" type="text">
+      </div>
+      <div class="left">
+        <label for="other">Other?</label>
+      </div>
+      <div class="right">
+        <input id="other" type="text">
+      </div>
+      <div class="left">
+        <input id="submit" type="button" value="Submit">
+      </div
+      </form>
+    </div>
+
     <script src="../jquery/jquery.js"></script>
     <script src="../js/javascript.js"></script>
     <script src = "../js/request.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
