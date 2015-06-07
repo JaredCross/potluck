@@ -30,9 +30,13 @@
    </span>
  </div>
     <!-- end add to calendar button -->
+    <!-- begin table with SQL potluck data -->
     <div id = "table-container">
       <table class = "potluck-table-data">
         <tr>
+          <th class ="small-id">
+            Entry #
+          </th>
           <th>
             Name
           </th>
@@ -51,49 +55,48 @@
         </tr>
       </table>
     </div>
+    <!-- end table -->
+    <!-- begin form to enter new sql entry -->
     <div id="mainform">
       <p>Please enter your name and whatever you would like to bring below.</p>
       <form id = "potluck-form">
-      <div class="left">
+        <input id="id" type="text" readonly>
         <label for="name">Name?</label>
-      </div>
-      <div class="right">
         <input id="name" type="text">
-      </div>
-      <div class="left">
         <label for="main-dish">Main Dish? </label>
-      </div>
-      <div class="right">
         <input id="main-dish" type="text">
-      </div>
-      <div class="left">
         <label for="side-dish">Side Dish? </label>
-      </div>
-      <div class="right">
         <input id="side-dish" type="text">
-      </div>
-      <div class="left">
         <label for="dessert-dish">Dessert?   </label>
-      </div>
-      <div class="right">
         <input id="dessert-dish" type="text">
-      </div>
-      <div class="left">
         <label for="other">Other?</label>
-      </div>
-      <div class="right">
         <input id="other" type="text">
-      </div>
-      <div class="left">
+        <div id="button-container">
         <input id="submit" type="button" value="Submit">
-      </div
+      </div>
       </form>
     </div>
-
+    <!-- end form -->
+    <!-- begin update form -->
+    <div class="update-container">
+      <h3>Need to update an entry?</h3>
+    <select class="update-by-name">
+      <option value="invalid" selected>Choose your name</option>
+    </select>
+  </div>
+  <div class="update-inputs-container">
+  </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted"></p>
+      </div>
+    </footer>
     <script src="../jquery/jquery.js"></script>
     <script src="../js/javascript.js"></script>
-    <script src = "../js/request.js"></script>
+    <script src="../js/request.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src ="../js/addtocalendar.js"></script>
+    <script src="../js/addtocalendar.js"></script>
+    <script src="../js/update-select-box.js"></script>
   </body>
 </html>
