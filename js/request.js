@@ -15,13 +15,13 @@ $(function ()
           var side_result = row[3];
           var dessert_result = row[4];
           var other_result = row[5];
-          $('.potluck-table-data').append("<tr><td>"+id+"</td>"+"<td>"+student_name+"</td>"
+          $('.potluck-table-data').append("<tr><td>"+student_name+"</td>"
             +"<td>"+main_result+"</td>"+"<td>"+side_result+"</td>"
               +"<td>"+dessert_result+"</td>"+"<td>"+other_result+"</td>"
                + "</tr>");
           $('.update-by-name').append($('<option/>', {
             value: id,
-            text : id.concat(". ").concat(student_name)
+            text : student_name
           }));
         }
       }

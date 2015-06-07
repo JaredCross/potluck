@@ -23,8 +23,11 @@ $(".update-by-name").change(function() {
               $('#side-dish').val(side);
               $('#dessert-dish').val(dessert);
               $('#other').val(other);
+              $('.instructions').text('Update Mode: Please change the information'
+                +' desired and press "Update", or press "Delete" to remove your entry.');
               $('#button-container').append('<input type="button" value="Update" name ="update">');
-
+              $('#button-container').append('<div id="delete-button-container">'
+                +'<p>OR</p><input type="button" value="Delete" name ="delete"></div>');
             }
           });
     } else {
@@ -53,5 +56,26 @@ $(document).on("click","input[name='update']",function() {
     } else {
 
     }
+
+});
+
+$(document).on("click","input[name='delete']",function() {
+  if (confirm('Are you sure you want to delete this entry?')) {
+    if($("#update-name").val()!="") {
+      console.log("update2");
+        $.ajax({
+            url: "../pages/delete_entry.php",
+            type: "POST",
+            async: true,
+            data: { id:$("#id").val()},
+
+            success: function(data) {
+              setTimeout(function(){
+                location.reload(true);
+              }, 500);
+            },
+        });
+    }
+  }
 
 });

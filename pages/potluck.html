@@ -34,9 +34,6 @@
     <div id = "table-container">
       <table class = "potluck-table-data">
         <tr>
-          <th class ="small-id">
-            Entry #
-          </th>
           <th>
             Name
           </th>
@@ -58,9 +55,9 @@
     <!-- end table -->
     <!-- begin form to enter new sql entry -->
     <div id="mainform">
-      <p>Please enter your name and whatever you would like to bring below.</p>
+      <p class ="instructions">Please enter your name and whatever you would like to bring below.</p>
       <form id = "potluck-form">
-        <input id="id" type="text" readonly>
+        <input id="id" type="hidden">
         <label for="name">Name?</label>
         <input id="name" type="text">
         <label for="main-dish">Main Dish? </label>
@@ -81,7 +78,7 @@
     <div class="update-container">
       <h3>Need to update an entry?</h3>
     <select class="update-by-name">
-      <option value="invalid" selected>Choose your name</option>
+      <option value="invalid" selected disabled>Choose your name</option>
     </select>
   </div>
   <div class="update-inputs-container">
