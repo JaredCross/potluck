@@ -1,9 +1,20 @@
+<?
+session_name("MyLogin");
+session_start();
+session_destroy();
+
+if($_GET['login'] == "failed") {
+print $_GET['cause'];
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Submit Form Using AJAX, jQuery and PHP</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -27,13 +38,17 @@
   </nav>
     <div class="jumbotron">
       <div class="container">
-        <h1>Under Construction</h1>
-          <h2><a href="http://www.jaredcross.com/pages/potluck_protected.php">
-             Here for the potluck? Click me!</a>
-          </h2>
+        <h1>Please login to head to the Potluck!</h1>
       </div>
     </div>
-    <script src="../jquery/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  </body>
+<div class="login-container">
+    <form name="login_form" method="post" action="log.php?action=login">
+Login: <input type="text" name="user"><BR>
+Password: <input type="password" name="pwd"><BR>
+<input type="submit">
+</form>
+</div>
+<script src="../jquery/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
 </html>

@@ -1,11 +1,11 @@
 <?php
 $servername = "localhost";
-$username = "jcross86_public";
-$password = "Potluck1";
+$username = "username";
+$password = "password";
 $id = $_POST['id'];
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, "jcross86_potluck-data");
+$conn = new mysqli($servername, $username, $password, "database");
 
 // Check connection
 if ($conn->connect_error) {
@@ -14,6 +14,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 $sql = "DELETE FROM potluck_table WHERE ID='$id'";
+
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";

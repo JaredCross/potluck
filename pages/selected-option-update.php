@@ -1,11 +1,11 @@
 <?php
 
   $host = "localhost";
-  $user = "jcross86_public";
-  $pass = "Potluck1";
+  $user = "username";
+  $pass = "password";
 
-  $databaseName = "jcross86_potluck-data";
-  $tableName = "potluck_table";
+  $databaseName = "database name";
+  $tableName = "table name";
 
 
   // include 'DB.php';

@@ -25,6 +25,7 @@ $(".update-by-name").change(function() {
               $('#other').val(other);
               $('.instructions').text('Update Mode: Please change the information'
                 +' desired and press "Update", or press "Delete" to remove your entry.');
+              $('.instructions').addClass('instructions-update').removeClass('instructions');
               $('#button-container').append('<input type="button" value="Update" name ="update">');
               $('#button-container').append('<div id="delete-button-container">'
                 +'<p>OR</p><input type="button" value="Delete" name ="delete"></div>');

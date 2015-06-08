@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "jcross86_public";
-$password = "Potluck1";
+$username = "username";
+$password = "password";
 $name = $_POST['name'];
 $main = $_POST['main'];
 $side = $_POST['side'];
@@ -9,7 +9,7 @@ $dessert = $_POST['dessert'];
 $other = $_POST['other'];
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, "jcross86_potluck-data");
+$conn = new mysqli($servername, $username, $password, "database name");
 
 // Check connection
 if ($conn->connect_error) {
